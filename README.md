@@ -1,5 +1,5 @@
 # Mockery cheat sheet
-Cheat sheet for people getting started with Php's Mockery
+Cheat sheet for people getting started with Php's Mockery - https://github.com/padraic/mockery
 
 ### Create a new mock
 
@@ -97,7 +97,7 @@ echo $mock->a(); //prints 'c'
 echo $mock->b(); //prints 'b'
 ```
 
-How to mock Laravel Models?
+### How to mock Model Objects? (like Laravel Models)
 
 Create mock aliases (mocks that extend \stdClass)
 
