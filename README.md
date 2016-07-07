@@ -175,7 +175,7 @@ echo $mock->second();
 echo $mock->first(); //FAILS [ Method Mockery_0__Test::first()() called out of order: expected order 1, was 2 ]
 ```
 
-### How to check something in all the *tests* defined in a Test Class by default?
+### How to make an assertion in all your *tests* by default?
 
 ```
 public function setUp() {
