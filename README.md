@@ -142,7 +142,7 @@ echo $mock->missingMethod(); //prints Undefined (references to \Mockery\Undefine
 
 ### How to call methods of *Original* Class not defined in your $mock? 
 
-Best way is to create partial mocks like shown above. But TIMTWOTDI
+Best way is to create partial mocks like shown above. But TIMTOWDI
 
 ```
 \Mockery::mock('MyClass')->shouldDeferMissing();
@@ -159,10 +159,9 @@ class Test {
 $mock = \Mockery::mock('Test');
 $mock->shouldreceive('a')->once()->passthru();
 echo $mock->a(); //print 'a'
-}
 ```
 
-### How to assert that which function is called after which?
+### How to assert that function `a` is called after function `b`?
 
 ```
 $mock = \Mockery::mock('Test', ['first' => '1', 'second' => 2]);
